@@ -1,0 +1,32 @@
+{
+  "name": "calm-cloud",
+  "displayName": "Calm Cloud",
+  "description": "A VS Code theme with the name Calm Cloud",
+  "version": "1.0.0",
+  "publisher": "Akaiamerin",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "icon": "img/logo.png",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Calm Cloud Light",
+        "uiTheme": "vs",
+        "path": "./themes/calm-cloud-light-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Akaiamerin/calm-cloud.git"
+  },
+  "type": "module"
+}

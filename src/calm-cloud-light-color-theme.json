@@ -1,0 +1,960 @@
+{
+    "name": "Calm Cloud Light",
+    "type": "light",
+    "semanticHighlighting": true,
+    "colors": {
+        "contrastActiveBorder": "#00000000", //在活动元素周围额外的一层边框，用来提高对比度从而区别其他元素。
+        "contrastBorder": "#00000000", //在元素周围额外的一层边框，用来提高对比度从而区别其他元素。
+        "descriptionForeground": "#333333", //提供其他信息的说明文本的前景色（例如标签文本）。
+        "disabledForeground": "#333333", //已禁用元素的前景色。此颜色仅在不被组件覆盖时适用。
+        "errorForeground": "#ee3333", //错误信息的前景色。此颜色仅在不被组件覆盖时适用。
+        "focusBorder": "#cccccc", //焦点元素的边框颜色。此颜色仅在不被组件覆盖时适用。
+        "foreground": "#333333", //整体前景色。此颜色仅在不被组件覆盖时适用。
+        "icon.foreground": "#333333", //工作台中图标的默认颜色。
+        "sash.hoverBorder": "#cccccc", //活动框格的边框颜色。
+        "selection.background": "#99eeff80", //工作台所选文本的背景色（例如输入字段或文本区域）。本设置不适用于编辑器。
+        "widget.border": "#cccccc", //编辑器内小组件（例如查找/替换）的边框颜色。
+        "widget.shadow": "#00000000", //编辑器内小组件（例如查找/替换）的阴影颜色。
+        "window.activeBorder": "#00000000", //窗口处于活动状态时用于窗口边框颜色。当使用自定义标题栏时，仅在 macOS 和 Linux 桌面客户端中受支持。
+        "window.inactiveBorder": "#00000000", //窗口处于非活动状态时用于窗口边框颜色。当使用自定义标题栏时，仅在 macOS 和 Linux 桌面客户端中受支持。
+        "textBlockQuote.background": "#f2f2f2", //文本中块引用的背景色。
+        "textBlockQuote.border": "#00000000", //文本中块引用的边框颜色。
+        "textCodeBlock.background": "#f2f2f2", //文本中代码块的背景色。
+        "textLink.activeForeground": "#3366ee", //文本中链接在点击或鼠标悬停时的前景色。
+        "textLink.foreground": "#3399ee", //文本中链接的前景色。
+        "textPreformat.foreground": "#333333", //预格式化文本段的前景色。
+        "textSeparator.foreground": "#333333", //文字分隔符的颜色。
+        "toolbar.activeBackground": "#bbbbbb", //将鼠标悬停在操作上时的工具栏的背景色。
+        "toolbar.hoverBackground": "#cccccc", //使用鼠标悬停在操作上时显示工具栏的背景色。
+        "toolbar.hoverOutline": "#00000000", //使用鼠标悬停在操作上时显示工具栏轮廓颜色。
+        "button.background": "#3399ee", //按钮的背景色。
+        "button.border": "#cccccc", //按钮的边框颜色。
+        "button.foreground": "#f8f8f8", //按钮前景色。
+        "button.hoverBackground": "#3366ee", //悬停时按钮的背景色。
+        "button.secondaryBackground": "#3399ee", //辅助按钮的背景色。
+        "button.secondaryForeground": "#f8f8f8", //辅助按钮前景色。
+        "button.secondaryHoverBackground": "#3366ee", //悬停时辅助按钮的背景色。
+        "button.separator": "#f8f8f8", //按钮分隔符颜色。
+        "checkbox.background": "#ffffff", //复选框小部件的背景色。
+        "checkbox.border": "#cccccc", //复选框小部件的边框颜色。
+        "checkbox.foreground": "#333333", //复选框小部件的前景色。
+        "checkbox.selectBackground": "#ffffff", //选择复选框小组件所在的元素时该小组件的背景色。
+        "checkbox.selectBorder": "#cccccc", //选择复选框小组件所在的元素时该小组件的边框颜色。
+        "dropdown.background": "#ffffff", //下拉列表的背景色。
+        "dropdown.border": "#cccccc", //下拉列表的边框颜色。
+        "dropdown.foreground": "#333333", //下拉列表前景色。
+        "dropdown.listBackground": "#ffffff", //下拉列表的背景色。
+        "input.background": "#ffffff", //输入框的背景色。
+        "input.border": "#cccccc", //输入框的边框颜色。
+        "input.foreground": "#333333", //输入框前景色。
+        "input.placeholderForeground": "#808080", //输入框中占位符的前景色。
+        "inputOption.activeBackground": "#dddddd", //输入字段中选项的背景悬停颜色。
+        "inputOption.activeBorder": "#cccccc", //输入字段中已激活选项的边框颜色。
+        "inputOption.activeForeground": "#333333", //输入字段中已激活的选项的前景色。
+        "inputOption.hoverBackground": "#dddddd", //输入字段中激活选项的背景色。
+        "inputValidation.errorBackground": "#ffffff", //输入验证结果为错误级别时的背景色。
+        "inputValidation.errorBorder": "#cccccc", //严重性为错误时输入验证的边框颜色。
+        "inputValidation.errorForeground": "#ee3333", //输入验证结果为错误级别时的前景色。
+        "inputValidation.infoBackground": "#ffffff", //输入验证结果为信息级别时的背景色。
+        "inputValidation.infoBorder": "#333333", //严重性为信息时输入验证的边框颜色。
+        "inputValidation.infoForeground": "#333333", //输入验证结果为信息级别时的前景色。
+        "inputValidation.warningBackground": "#ffffff", //严重性为警告时输入验证的背景色。
+        "inputValidation.warningBorder": "#cccccc", //严重性为警告时输入验证的边框颜色。
+        "inputValidation.warningForeground": "#ee9933", //输入验证结果为警告级别时的前景色。
+        "scrollbar.shadow": "#00000000", //表示视图被滚动的滚动条阴影。
+        "scrollbarSlider.activeBackground": "#aaaaaa80", //滚动条滑块在被点击时的背景色。
+        "scrollbarSlider.background": "#cccccccc", //滚动条滑块的背景色。
+        "scrollbarSlider.hoverBackground": "#bbbbbb80", //滚动条滑块在悬停时的背景色。
+        "badge.background": "#3399ee", //Badge 的背景色。Badge 是小型的信息标签（例如表示搜索结果数量的标签）。
+        "badge.foreground": "#f8f8f8", //Badge 前景色。Badge 是小型的信息标签（例如表示搜索结果数量的标签）。
+        "progressBar.background": "#3399ee", //表示长时间操作的进度条的背景色。
+        "list.activeSelectionBackground": "#dddddd", //已选项在列表/树活动时的背景色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.activeSelectionForeground": "#333333", //已选项在列表/树活动时的前景色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.activeSelectionIconForeground": "#333333", //已选项在列表/树活动时的列表/树图标前景色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.deemphasizedForeground": "#333333", //取消强调的项目的列表/树前景色。
+        "list.dropBackground": "#dddddd80", //使用鼠标移动项目时，列表/树进行拖放的背景色。
+        "list.errorForeground": "#333333", //包含错误的列表项的前景色。
+        "list.filterMatchBackground": "#eeee3380", //筛选后的匹配项的背景色。
+        "list.filterMatchBorder": "#00000000", //筛选后的匹配项的边框颜色。
+        "list.focusAndSelectionOutline": "#cccccc", //当列表/树处于活动状态且已选择时，重点项的列表/树的边框颜色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.focusBackground": "#dddddd", //焦点项在列表/树活动时的背景色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.focusForeground": "#333333", //焦点项在列表/树活动时的前景色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.focusHighlightForeground": "#333333", //在列表/树中搜索时，匹配活动聚焦项的突出显示内容的列表/树前景色。
+        "list.focusOutline": "#cccccc", //列表/树活动时，焦点项目的列表/树边框色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.highlightForeground": "#333333", //在列表/树中搜索时，其中匹配内容的高亮颜色。
+        "list.hoverBackground": "#dddddd", //使用鼠标移动项目时，列表/树的背景色。
+        "list.hoverForeground": "#333333", //鼠标在项目上悬停时，列表/树的前景色。
+        "list.inactiveFocusBackground": "#dddddd", //非活动的列表/树控件中焦点项的背景色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.inactiveFocusOutline": "#cccccc", //列表/数非活动时，焦点项目的列表/树边框色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.inactiveSelectionBackground": "#dddddd", //已选项在列表/树非活动时的背景色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.inactiveSelectionForeground": "#333333", //已选项在列表/树非活动时的前景色。活动的列表/树具有键盘焦点，非活动的没有。
+        "list.inactiveSelectionIconForeground": "#333333", //已选项在列表/树非活动时的图标前景色。活动的列表/树具有键盘焦点，非活动的则没有。
+        "list.invalidItemForeground": "#808080", //列表/树中无效项的前景色（例如资源管理器中没有解析的根目录）。
+        "list.warningForeground": "#333333", //包含警告的列表项的前景色。
+        "listFilterWidget.background": "#f2f2f2", //列表和树中类型筛选器小组件的背景色。
+        "listFilterWidget.noMatchesOutline": "#00000000", //当没有匹配项时，列表和树中类型筛选器小组件的轮廓颜色。
+        "listFilterWidget.outline": "#00000000", //列表和树中类型筛选器小组件的轮廓颜色。
+        "listFilterWidget.shadow": "#00000000", //列表和树中类型筛选器小组件的阴影颜色。
+        "tree.inactiveIndentGuidesStroke": "#cccccc", //非活动缩进参考线的树描边颜色。
+        "tree.indentGuidesStroke": "#808080", //缩进参考线的树描边颜色。
+        "tree.tableColumnsBorder": "#cccccc", //列之间的表的边框颜色。
+        "tree.tableOddRowsBackground": "#00000000", //奇数表行的背景色。
+        //Activity Bar
+        "activityBar.activeBackground": "#00000000", //活动项的活动栏的背景色。
+        "activityBar.activeBorder": "#3399ee", //活动项的活动栏的边框颜色。
+        "activityBar.activeFocusBorder": "#cccccc", //活动项的活动栏焦点的边框颜色。
+        "activityBar.background": "#f2f2f2", //活动栏的背景色。
+        "activityBar.border": "#cccccc", //活动栏分隔侧边栏的边框颜色。
+        "activityBar.dropBorder": "#cccccc", //拖放活动栏项的反馈颜色。
+        "activityBar.foreground": "#3399ee", //活动栏项在活动时的前景色。
+        "activityBar.inactiveForeground": "#333333", //活动栏项在非活动时的前景色。
+        "activityBarBadge.background": "#3399ee", //活动通知徽章的背景色。
+        "activityBarBadge.foreground": "#f8f8f8", //活动通知徽章前景色。
+        //Profiles
+        "profileBadge.background": "#3399ee", //配置文件徽章的背景色。配置文件徽章显示在活动栏中设置齿轮图标的顶部。
+        "profileBadge.foreground": "#f8f8f8", //配置文件徽章前景色。配置文件徽章显示在活动栏中设置齿轮图标的顶部。
+        //Side Bar
+        "sideBar.background": "#f2f2f2", //侧边栏的背景色。
+        "sideBar.border": "#cccccc", //侧边栏分隔编辑器的边框颜色。
+        "sideBar.dropBackground": "#dddddd80", //侧边栏中的部分在拖放时的反馈颜色。颜色必须透明。
+        "sideBar.foreground": "#333333", //侧边栏前景色。
+        "sideBarSectionHeader.background": "#f2f2f2", //侧边栏部分标题的背景色。
+        "sideBarSectionHeader.border": "#cccccc", //侧边栏部分标题边界色。
+        "sideBarSectionHeader.foreground": "#333333", //侧边栏部分标题前景色。
+        "sideBarTitle.foreground": "#333333", //侧边栏标题前景色。
+        //Minimap
+        "minimap.background": "#f2f2f280", //迷你地图的背景色。
+        "minimap.errorHighlight": "#ee333380", //用于错误的迷你地图标记颜色。
+        "minimap.findMatchHighlight": "#eeee3380", //用于查找匹配项的迷你地图标记颜色。
+        "minimap.foregroundOpacity": "#000000cc", //在缩略图中呈现的前景元素的不透明度（例如 "#000000c0" 将呈现不透明度为 75% 的元素）。
+        "minimap.selectionHighlight": "#99eeff80", //编辑器选区在迷你地图中对应的标记颜色。
+        "minimap.selectionOccurrenceHighlight": "#99eeff80", //用于重复编辑器选择的缩略图标记颜色。
+        "minimap.warningHighlight": "#ee993380", //用于警告的迷你地图标记颜色。
+        "minimapGutter.addedBackground": "#00000000", //添加的线的迷你地图装订线的背景色。
+        "minimapGutter.deletedBackground": "#00000000", //删除的线的迷你地图装订线的背景色。
+        "minimapGutter.modifiedBackground": "#00000000", //修改的线的迷你地图装订线的背景色。
+        "minimapSlider.activeBackground": "#aaaaaa80", //单击时，迷你地图滑块的背景色。
+        "minimapSlider.background": "#cccccc80", //迷你地图滑块的背景色。
+        "minimapSlider.hoverBackground": "#bbbbbb80", //悬停时，迷你地图滑块的背景色。
+        //Editor Groups & Tabs
+        "editorGroup.border": "#cccccc", //将多个编辑器组彼此分隔开的颜色。
+        "editorGroup.dropBackground": "#dddddd80", //拖动编辑器时的背景色。颜色必须透明。
+        "editorGroup.dropIntoPromptBackground": "#f2f2f2", //拖动文件时编辑器上显示的文本的背景色。
+        "editorGroup.dropIntoPromptBorder": "#cccccc", //拖动文件时在编辑器上显示的文本的边框颜色。
+        "editorGroup.dropIntoPromptForeground": "#333333", //拖动文件时编辑器上显示的文本前景色。
+        "editorGroup.emptyBackground": "#ffffff", //空编辑器组的背景色。
+        "editorGroup.focusedEmptyBorder": "#cccccc", //空编辑器组被聚焦时的边框颜色。
+        "editorGroupHeader.border": "#cccccc", //编辑器组标题标头的边框颜色。
+        "editorGroupHeader.noTabsBackground": "#f2f2f2", //禁用选项卡（"workbench.editor.showTabs": false）时编辑器组标题颜色。
+        "editorGroupHeader.tabsBackground": "#f2f2f2", //启用选项卡时编辑器组标题的背景色。
+        "editorGroupHeader.tabsBorder": "#cccccc", //选项卡启用时编辑器组标题的边框颜色。
+        "editorPane.background": "#ffffff", //居中编辑器布局中左侧与右侧编辑器窗格的背景色。
+        "sideBySideEditor.horizontalBorder": "#cccccc", //在编辑器组中上下并排显示时，用于分隔两个编辑器的颜色。
+        "sideBySideEditor.verticalBorder": "#cccccc", //在编辑器组中左右并排显示时，用于分隔两个编辑器的颜色。
+        "tab.activeBackground": "#ffffff", //活动选项卡的背景色。
+        "tab.activeBorder": "#cccccc", //活动选项卡底部的边框颜色。
+        "tab.activeBorderTop": "#3399ee", //活动选项卡顶部的边框颜色。
+        "tab.activeForeground": "#333333", //活动选项卡的前景色。
+        "tab.activeModifiedBorder": "#cccccc", //已修改的活动选项卡顶部的边框颜色。
+        "tab.border": "#cccccc", //用于将选项卡彼此分隔开的边框颜色。
+        "tab.hoverBackground": "#dddddd", //悬停时选项卡的背景色。
+        "tab.hoverBorder": "#cccccc", //悬停时选项卡用于突出显示的边框颜色。
+        "tab.hoverForeground": "#333333", //悬停时选项卡的前景色。
+        "tab.inactiveBackground": "#f2f2f2", //非活动选项卡的背景色。
+        "tab.inactiveForeground": "#333333", //非活动选项卡的前景色。
+        "tab.inactiveModifiedBorder": "#cccccc", //已修改的非活动选项卡顶部的边框颜色。
+        "tab.lastPinnedBorder": "#ffffff", //用于将固定的选项卡与其他选项卡隔开的边框颜色。
+        "tab.unfocusedActiveBackground": "#f2f2f2", //未聚焦组中的活动选项卡的背景色。
+        "tab.unfocusedActiveBorder": "#cccccc", //失去焦点的活动选项卡底部的边框颜色。
+        "tab.unfocusedActiveBorderTop": "#3399ee", //失去焦点的活动选项卡顶部的边框颜色。
+        "tab.unfocusedActiveForeground": "#333333", //失去焦点的活动选项卡的前景色。
+        "tab.unfocusedActiveModifiedBorder": "#cccccc", //未聚焦组中已修改的活动选项卡顶部的边框颜色。
+        "tab.unfocusedHoverBackground": "#dddddd", //未聚焦组选项卡被悬停时的背景色。
+        "tab.unfocusedHoverBorder": "#cccccc", //悬停时未聚焦组选项卡用于突出显示的边框颜色。
+        "tab.unfocusedHoverForeground": "#333333", //悬停时未聚焦组中选项卡的前景色。
+        "tab.unfocusedInactiveBackground": "#f2f2f2", //未聚焦组中非活动选项卡的背景色。
+        "tab.unfocusedInactiveForeground": "#333333", //未聚焦组中非活动选项卡的前景色。
+        "tab.unfocusedInactiveModifiedBorder": "#cccccc", //未聚焦组中已修改的非活动选项卡顶部的边框颜色。
+        //Editor colors
+        "editor.background": "#ffffff", //编辑器的背景色。
+        "editor.findMatchBackground": "#eeee3380", //当前搜索匹配项的颜色。
+        "editor.findMatchBorder": "#00000000", //当前搜索匹配项的边框颜色。
+        "editor.findMatchHighlightBackground": "#eeee3380", //其他搜索匹配项的颜色。颜色必须透明。
+        "editor.findMatchHighlightBorder": "#00000000", //其他搜索匹配项的边框颜色。
+        "editor.findRangeHighlightBackground": "#99eeff80", //限制搜索范围的颜色。颜色必须透明。
+        "editor.findRangeHighlightBorder": "#00000000", //限制搜索范围的边框颜色。颜色必须透明。
+        "editor.foldBackground": "#99eeff80", //折叠范围后面的背景色。颜色必须设为透明。
+        "editor.foreground": "#333333", //编辑器前景色。
+        "editor.hoverHighlightBackground": "#00000000", //在下面突出显示悬停的字词。颜色必须透明。
+        "editor.inactiveSelectionBackground": "#99eeff80", //非活动编辑器中所选内容的颜色。颜色必须透明。
+        "editor.lineHighlightBackground": "#f8f8f8", //光标所在行高亮内容的背景色。
+        "editor.lineHighlightBorder": "#00000000", //光标所在行高亮内容的边框颜色。
+        "editor.linkedEditingBackground": "#99eeff80", //编辑器根据类型自动重命名时的背景色。
+        "editor.rangeHighlightBackground": "#00000000", //高亮范围的背景色，喜欢通过快速打开和查找功能。颜色必须透明。
+        "editor.rangeHighlightBorder": "#00000000", //高亮区域的边框颜色。
+        "editor.selectionBackground": "#99eeff80", //编辑器所选内容的颜色。
+        "editor.selectionForeground": "#333333", //用以彰显高对比度的所选文本的颜色。
+        "editor.selectionHighlightBackground": "#99eeff80", //与所选项相关内容的区域的颜色。颜色必须透明。
+        "editor.selectionHighlightBorder": "#00000000", //与所选项相关内容的区域的边框颜色。
+        "editor.symbolHighlightBackground": "#eeee3380", //高亮显示符号的背景色（例如转到定义或转到下一个/上一个符号）。颜色必须透明。
+        "editor.symbolHighlightBorder": "#00000000", //高亮显示符号的边框颜色。
+        "editor.wordHighlightBackground": "#99eeff80", //读取访问期间符号的背景色（例如读取变量时）。颜色必须透明。
+        "editor.wordHighlightBorder": "#00000000", //读取访问期间符号的边框颜色（例如读取变量）。
+        "editor.wordHighlightStrongBackground": "#99eeff80", //写入访问期间符号的背景色（例如写入变量时）。颜色必须透明。
+        "editor.wordHighlightStrongBorder": "#00000000", //写入访问期间符号的边框颜色（例如写入变量）。
+        "editor.wordHighlightTextBackground": "#99eeff80", //符号在文本中出现时的背景色。颜色必须透明。
+        "editor.wordHighlightTextBorder": "#00000000", //符号在文本中出现时的边框颜色。
+        "editorBracketHighlight.foreground1": "#333333", //括号的前景色（1）。需要启用括号对着色。
+        "editorBracketHighlight.foreground2": "#333333", //括号的前景色（2）。需要启用括号对着色。
+        "editorBracketHighlight.foreground3": "#333333", //括号的前景色（3）。需要启用括号对着色。
+        "editorBracketHighlight.foreground4": "#333333", //括号的前景色（4）。需要启用括号对着色。
+        "editorBracketHighlight.foreground5": "#333333", //括号的前景色（5）。需要启用括号对着色。
+        "editorBracketHighlight.foreground6": "#333333", //括号的前景色（6）。需要启用括号对着色。
+        "editorBracketHighlight.unexpectedBracket.foreground": "#ee3333", //方括号出现意外的前景色。
+        "editorBracketMatch.background": "#dddddd", //匹配括号的背景色。
+        "editorBracketMatch.border": "#00000000", //匹配括号的边框颜色。
+        "editorBracketPairGuide.activeBackground1": "#333333", //活动括号对指南的背景色（1）。需要启用括号对指南。
+        "editorBracketPairGuide.activeBackground2": "#333333", //活动括号对指南的背景色（2）。需要启用括号对指南。
+        "editorBracketPairGuide.activeBackground3": "#333333", //活动括号对指南的背景色（3）。需要启用括号对指南。
+        "editorBracketPairGuide.activeBackground4": "#333333", //活动括号对指南的背景色（4）。需要启用括号对指南。
+        "editorBracketPairGuide.activeBackground5": "#333333", //活动括号对指南的背景色（5）。需要启用括号对指南。
+        "editorBracketPairGuide.activeBackground6": "#333333", //活动括号对指南的背景色（6）。需要启用括号对指南。
+        "editorBracketPairGuide.background1": "#333333", //非活动括号对指南的背景色（1）。需要启用括号对指南。
+        "editorBracketPairGuide.background2": "#333333", //非活动括号对指南的背景色（2）。需要启用括号对指南。
+        "editorBracketPairGuide.background3": "#333333", //非活动括号对指南的背景色（3）。需要启用括号对指南。
+        "editorBracketPairGuide.background4": "#333333", //非活动括号对指南的背景色（4）。需要启用括号对指南。
+        "editorBracketPairGuide.background5": "#333333", //非活动括号对指南的背景色（5）。需要启用括号对指南。
+        "editorBracketPairGuide.background6": "#333333", //非活动括号对指南的背景色（6）。需要启用括号对指南。
+        "editorCodeLens.foreground": "#333333", //编辑器 CodeLens 的前景色。
+        "editorCommentsWidget.rangeActiveBackground": "#f2f2f2", //当前选定或悬停注释范围的背景色。
+        "editorCommentsWidget.rangeActiveBorder": "#cccccc", //当前选定或悬停注释范围的边框颜色。
+        "editorCommentsWidget.rangeBackground": "#f2f2f2", //注释范围的背景色。
+        "editorCommentsWidget.rangeBorder": "#cccccc", //注释范围的边框颜色。
+        "editorCommentsWidget.resolvedBorder": "#333333", //已解析评论的边框和箭头颜色。
+        "editorCommentsWidget.unresolvedBorder": "#333333", //未解析评论的边框和箭头颜色。
+        "editorCursor.background": "#333333", //编辑器光标的背景色。可以自定义块型光标覆盖字符的颜色。
+        "editorCursor.foreground": "#333333", //编辑器光标的前景色。
+        "editorError.background": "#00000000", //编辑器中错误文本的背景色。颜色必须透明。
+        "editorError.border": "#00000000", //如果设置，编辑器中错误的双下划线颜色。
+        "editorError.foreground": "#ee3333", //编辑器中错误波浪线的前景色。
+        "editorGutter.addedBackground": "#0080ee", //编辑器导航线中已插入行的背景色。
+        "editorGutter.background": "#ffffff", //编辑器导航线的背景色。导航线包括边缘符号和行号。
+        "editorGutter.commentGlyphForeground": "#000000", //编辑器装订线中评论字形的装饰颜色。
+        "editorGutter.commentRangeForeground": "#000000", //用于标注范围的编辑器装订线装饰颜色。颜色必须不透明。
+        "editorGutter.commentUnresolvedGlyphForeground": "#000000", //编辑器装订线修饰颜色，用于注释未解析注释线程的字形。
+        "editorGutter.deletedBackground": "#ee3333", //编辑器导航线中被删除行的背景色。
+        "editorGutter.foldingControlForeground": "#808080", //编辑器装订线中折叠控件的颜色。
+        "editorGutter.modifiedBackground": "#80ee00", //编辑器导航线中已修改行的背景色。
+        "editorHint.border": "#00000000", //如果设置，编辑器中提示的双下划线颜色。
+        "editorHint.foreground": "#808080", //编辑器中提示波浪线的前景色。
+        "editorIndentGuide.activeBackground": "#808080", //编辑器活动缩进参考线的颜色。
+        "editorIndentGuide.background": "#cccccc", //编辑器缩进参考线的颜色。
+        "editorInfo.background": "#00000000", //编辑器中信息文本的背景色。颜色必须透明。
+        "editorInfo.border": "#00000000", //如果设置，编辑器中信息的双下划线颜色。
+        "editorInfo.foreground": "#333333", //编辑器中信息波浪线的前景色。
+        "editorInlayHint.background": "#dddddd", //内联提示的背景色。
+        "editorInlayHint.foreground": "#808080", //内联提示的前景色。
+        "editorInlayHint.parameterBackground": "#dddddd", //参数内联提示的背景色。
+        "editorInlayHint.parameterForeground": "#808080", //参数内联提示的前景色。
+        "editorInlayHint.typeBackground": "#dddddd", //类型内联提示的背景色。
+        "editorInlayHint.typeForeground": "#808080", //类型内联提示的前景色。
+        "editorLightBulb.foreground": "#ee9933", //灯泡操作图标的颜色。
+        "editorLightBulbAutoFix.foreground": "#ee9933", //灯泡自动修复操作图标的颜色。
+        "editorLineNumber.activeForeground": "#3333ee", //编辑器活动行号的颜色。
+        "editorLineNumber.dimmedForeground": "#3333ee", //将 editor.renderFinalNewline 设置为灰色时最终编辑器行的颜色。
+        "editorLineNumber.foreground": "#808080", //编辑器行号的颜色。
+        "editorLink.activeForeground": "#3399ee", //活动链接颜色。
+        "editorOverviewRuler.addedForeground": "#3399ee", //概览标尺中已增加内容的颜色。
+        "editorOverviewRuler.background": "#eeeeee", //编辑器概述标尺的背景色。
+        "editorOverviewRuler.border": "#00000000", //概览标尺边框颜色。
+        "editorOverviewRuler.bracketMatchForeground": "#00000000", //概览标尺上表示匹配括号的标记颜色。
+        "editorOverviewRuler.deletedForeground": "#ee3333", //概览标尺中已删除内容的颜色。
+        "editorOverviewRuler.errorForeground": "#ee3333", //概览标尺中错误标记的颜色。
+        "editorOverviewRuler.findMatchForeground": "#eeee33", //用于查找匹配项的概述标尺标记颜色。颜色必须透明。
+        "editorOverviewRuler.infoForeground": "#333333", //概览标尺中信息标记的颜色。
+        "editorOverviewRuler.modifiedForeground": "#3399ee", //概览标尺中已修改内容的颜色。
+        "editorOverviewRuler.rangeHighlightForeground": "#00000000", //用于突出显示范围的概述标尺标记颜色。颜色必须透明。
+        "editorOverviewRuler.selectionHighlightForeground": "#3399ee", //用于突出显示所选内容的概述标尺标记颜色。颜色必须透明。
+        "editorOverviewRuler.warningForeground": "#ee9933", //概览标尺中警告标记的颜色。
+        "editorOverviewRuler.wordHighlightForeground": "#3399ee", //用于突出显示符号的概述标尺标记颜色。颜色必须透明。
+        "editorOverviewRuler.wordHighlightStrongForeground": "#3399ee", //用于突出显示写权限符号的概述标尺标记颜色。颜色必须透明。
+        "editorOverviewRuler.wordHighlightTextForeground": "#3399ee", //符号在文本中出现时的概述标尺标记颜色。颜色必须透明。
+        "editorRuler.foreground": "#333333", //编辑器标尺的颜色。
+        "editorUnicodeHighlight.background": "#00000000", //用于突出显示 Unicode 字符的背景色。
+        "editorUnicodeHighlight.border": "#00000000", //用于突出显示 Unicode 字符的边框颜色。
+        "editorUnnecessaryCode.border": "#00000000", //编辑器中未使用的代码的边框颜色。
+        "editorUnnecessaryCode.opacity": "#00000080", //未使用的代码的在编辑器中显示的不透明度（例如 #000000c0 将以 75% 的不透明度显示代码）。对于高对比度主题，请使用 editorUnnecessaryCode.border 主题来为非必须代码添加下划线，以避免颜色淡化。
+        "editorWarning.background": "#00000000", //编辑器中警告文本的背景色。颜色必须透明。
+        "editorWarning.border": "#00000000", //如果设置，编辑器中警告的双下划线颜色。
+        "editorWarning.foreground": "#ee9933", //编辑器中警告波浪线的前景色。
+        "editorWhitespace.foreground": "#cccccc", //编辑器中空白字符的颜色。
+        "problemsErrorIcon.foreground": "#ee3333", //用于问题错误图标的颜色。
+        "problemsInfoIcon.foreground": "#808080", //用于问题信息图标的颜色。
+        "problemsWarningIcon.foreground": "#ee9933", //用于问题警告图标的颜色。
+        "search.resultsInfoForeground": "#333333", //搜索 Viewlet 完成消息中文本的颜色。
+        "searchEditor.findMatchBackground": "#eeee3380", //搜索编辑器查询匹配的颜色。
+        "searchEditor.findMatchBorder": "#00000000", //搜索编辑器查询匹配的边框颜色。
+        "searchEditor.textInputBorder": "#cccccc", //搜索编辑器文本输入框的边框。
+        //Diff editor colors
+        "diffEditor.border": "#cccccc", //两个文本编辑器之间的边框颜色。
+        "diffEditor.diagonalFill": "#cccccc", //差异编辑器的对角线填充颜色。对角线填充用于并排差异视图。
+        "diffEditor.insertedLineBackground": "#00000000", //已插入的行的背景色。颜色必须透明。
+        "diffEditor.insertedTextBackground": "#3399ee33", //已插入的文本的背景色。颜色必须透明。
+        "diffEditor.insertedTextBorder": "#00000000", //插入的文本的边框颜色。
+        "diffEditor.move.border": "#00000000", //在差异编辑器中移动的文本的边框颜色。
+        "diffEditor.removedLineBackground": "#00000000", //已删除的行的背景色。颜色必须透明。
+        "diffEditor.removedTextBackground": "#ee333333", //已删除的文本的背景色。颜色必须透明。
+        "diffEditor.removedTextBorder": "#00000000", //被删除文本的边框颜色。
+        "diffEditor.unchangedCodeBackground": "#00000000", //差异编辑器中未更改代码的背景色。
+        "diffEditor.unchangedRegionBackground": "#00000000", //差异编辑器中未更改块的背景色。
+        "diffEditor.unchangedRegionForeground": "#00000000", //差异编辑器中未更改块的前景色。
+        "diffEditorGutter.insertedLineBackground": "#00000000", //插入行的边距的背景色。
+        "diffEditorGutter.removedLineBackground": "#00000000", //删除行的边距的背景色。
+        "diffEditorOverview.insertedForeground": "#3399ee", //插入内容的差异概述标尺前景色。
+        "diffEditorOverview.removedForeground": "#ee3333", //删除内容的差异概述标尺前景色。
+        //Chat colors
+        // "chat.requestBackground": "#000000", //聊天请求的背景色。
+        // "chat.requestBorder": "#000000", //聊天请求的边框颜色。
+        //Inline Chat colors
+        // "inlineChat.background": "#000000", //交互式编辑器小组件的背景色。
+        // "inlineChat.border": "#000000", //交互式编辑器小组件的边框颜色。
+        // "inlineChat.regionHighlight": "#000000", //当前交互区域的背景突出显示。颜色必须透明。
+        // "inlineChat.shadow": "#000000", //交互式编辑器小组件的阴影颜色。
+        // "inlineChatDiff.inserted": "#000000", //交互式编辑器输入中已插入文本的背景色。
+        // "inlineChatInput.background": "#000000", //交互式编辑器输入的背景色。
+        // "inlineChatInput.border": "#000000", //交互式编辑器输入的边框颜色。
+        // "inlineChatInput.focusBorder": "#000000", //聚焦时交互式编辑器输入的边框颜色。
+        // "inlineChatInput.placeholderForeground": "#000000", //交互式编辑器输入占位符的前景色。
+        // "inlineChatrDiff.removed": "#000000", //交互式编辑器输入中已删除文本的背景色。
+        //Editor widget colors
+        "debugExceptionWidget.background": "#f2f2f2", //异常小组件的背景色。
+        "debugExceptionWidget.border": "#cccccc", //异常小组件的边框颜色。
+        "editorGhostText.background": "#f2f2f2", //编辑器中虚影文本的背景色。
+        "editorGhostText.border": "#cccccc", //编辑器中虚影文本的边框颜色。
+        "editorGhostText.foreground": "#333333", //编辑器中虚影文本的前景色。
+        "editorHoverWidget.background": "#f2f2f2", //编辑器悬停提示的背景色。
+        "editorHoverWidget.border": "#cccccc", //编辑器悬停时的边框颜色。
+        "editorHoverWidget.foreground": "#333333", //编辑器悬停时的前景色。
+        "editorHoverWidget.highlightForeground": "#333333", //参数提示中活动项的前景色。
+        "editorHoverWidget.statusBarBackground": "#f2f2f2", //编辑器悬停状态栏的背景色。
+        "editorMarkerNavigation.background": "#f2f2f2", //编辑器标记导航小组件的背景色。
+        "editorMarkerNavigationError.background": "#f2f2f2", //编辑器标记导航小组件错误颜色。
+        "editorMarkerNavigationError.headerBackground": "#f2f2f2", //编辑器标记导航小组件错误标题的背景色。
+        "editorMarkerNavigationInfo.background": "#f2f2f2", //编辑器标记导航小组件信息颜色。
+        "editorMarkerNavigationInfo.headerBackground": "#f2f2f2", //编辑器标记导航小组件信息标题的背景色。
+        "editorMarkerNavigationWarning.background": "#f2f2f2", //编辑器标记导航小组件警告颜色。
+        "editorMarkerNavigationWarning.headerBackground": "#f2f2f2", //编辑器标记导航小组件警告标题的背景色。
+        "editorStickyScroll.background": "#00000000", //编辑器的粘滞滚动的背景色。
+        "editorStickyScrollHover.background": "#00000000", //编辑器悬停的背景色上的粘滞滚动。
+        "editorSuggestWidget.background": "#f2f2f2", //建议小组件的背景色。
+        "editorSuggestWidget.border": "#cccccc", //建议小组件的边框颜色。
+        "editorSuggestWidget.focusHighlightForeground": "#3333ee", //当某项获得焦点时，在建议小组件中突出显示的匹配项的颜色。
+        "editorSuggestWidget.foreground": "#333333", //建议小组件的前景色。
+        "editorSuggestWidget.highlightForeground": "#3333ee", //建议小组件中匹配内容的高亮前景色。
+        "editorSuggestWidget.selectedBackground": "#dddddd", //建议小组件中所选条目的背景色。
+        "editorSuggestWidget.selectedForeground": "#333333", //建议小组件中所选条目的前景色。
+        "editorSuggestWidget.selectedIconForeground": "#333333", //建议小组件中所选条目的图标前景色。
+        "editorSuggestWidgetStatus.foreground": "#333333", //建议小组件状态的前景色。
+        "editorWidget.background": "#f2f2f2", //编辑器组件（例如查找/替换）的背景色。
+        "editorWidget.border": "#cccccc", //编辑器小部件的边框颜色。此颜色仅在小部件有边框且不被小部件覆盖时适用。
+        "editorWidget.foreground": "#333333", //编辑器小部件（例如查找/替换）的前景色。
+        "editorWidget.resizeBorder": "#cccccc", //编辑器小部件大小调整条的边框颜色。此颜色仅在小部件有调整边框且不被小部件覆盖时适用。
+        //Peek view colors
+        "peekView.border": "#cccccc", //速览视图边框和箭头颜色。
+        "peekViewEditor.background": "#ffffff", //速览视图编辑器的背景色。
+        "peekViewEditor.matchHighlightBackground": "#eeee3380", //在速览视图编辑器中匹配突出显示颜色。
+        "peekViewEditor.matchHighlightBorder": "#00000000", //在速览视图编辑器中匹配项的突出显示的边框颜色。
+        "peekViewEditorGutter.background": "#00000000", //速览视图编辑器中装订线的背景色。
+        "peekViewEditorStickyScroll.background": "#f2f2f2", //速览视图编辑器中粘滞滚动的背景色。
+        "peekViewResult.background": "#ffffff", //速览视图结果列表的背景色。
+        "peekViewResult.fileForeground": "#333333", //速览视图结果列表中文件节点的前景色。
+        "peekViewResult.lineForeground": "#333333", //速览视图结果列表中行节点的前景色。
+        "peekViewResult.matchHighlightBackground": "#eeee3380", //在速览视图结果列表中匹配突出显示颜色。
+        "peekViewResult.selectionBackground": "#dddddd", //速览视图结果列表中所选条目的背景色。
+        "peekViewResult.selectionForeground": "#333333", //速览视图结果列表中所选条目的前景色。
+        "peekViewTitle.background": "#f2f2f2", //速览视图标题区域的背景色。
+        "peekViewTitleDescription.foreground": "#333333", //速览视图标题信息前景色。
+        "peekViewTitleLabel.foreground": "#333333", //速览视图标题颜色。
+        //Merge conflicts colors
+        "editorOverviewRuler.commentForeground": "#333333", //解析批注的编辑器概述标尺修饰颜色。此颜色必须不透明。
+        "editorOverviewRuler.commentUnresolvedForeground": "#333333", //编辑器概述未解析注释的标尺修饰颜色。此颜色必须不透明。
+        "editorOverviewRuler.commonContentForeground": "#cccccc", //内联合并冲突中共同祖先区域的概览标尺前景色。
+        "editorOverviewRuler.currentContentForeground": "#cccccc", //内联合并冲突中当前版本区域的概览标尺前景色。
+        "editorOverviewRuler.incomingContentForeground": "#cccccc", //内联合并冲突中传入的版本区域的概览标尺前景色。
+        "merge.border": "#00000000", //内联合并冲突中标头和分割线的边框颜色。
+        "merge.commonContentBackground": "#cccccc33", //内联合并冲突中的常见祖先内容背景。颜色必须透明。
+        "merge.commonHeaderBackground": "#00000000", //内联合并冲突中的常见祖先标头背景。颜色必须透明。
+        "merge.currentContentBackground": "#cccccc33", //内联合并冲突中的当前内容背景。颜色必须透明。
+        "merge.currentHeaderBackground": "#00000000", //当前标题背景的内联合并冲突。颜色必须透明。
+        "merge.incomingContentBackground": "#cccccc33", //内联合并冲突中的传入内容背景。颜色必须透明。
+        "merge.incomingHeaderBackground": "#00000000", //内联合并冲突中的传入标题背景。颜色必须透明。
+        "mergeEditor.change.background": "#99ee3333", //更改的背景色。
+        "mergeEditor.change.word.background": "#99ee3333", //字词更改的背景色。
+        "mergeEditor.changeBase.background": "#99ee3333", //基中更改的背景色。
+        "mergeEditor.changeBase.word.background": "#99ee3333", //基中字更改的背景色。
+        "mergeEditor.conflict.handled.minimapOverViewRuler": "#99ee33", //输入 1 中更改的前景色。
+        "mergeEditor.conflict.handledFocused.border": "#00000000", //处理的重点冲突的边框颜色。
+        "mergeEditor.conflict.handledUnfocused.border": "#00000000", //已处理的非重点冲突的边框颜色。
+        "mergeEditor.conflict.input1.background": "#99ee3333", //输入 1 中修饰的背景色。
+        "mergeEditor.conflict.input2.background": "#99ee3333", //输入 2 中修饰的背景色。
+        "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#99ee33", //输入 1 中更改的前景色。
+        "mergeEditor.conflict.unhandledFocused.border": "#00000000", //未处理的重点冲突的边框颜色。
+        "mergeEditor.conflict.unhandledUnfocused.border": "#00000000", //未处理的非重点冲突的边框颜色。
+        "mergeEditor.conflictingLines.background": "#cccccc33", //冲突行文本的背景色。
+        //Panel colors
+        "panel.background": "#f2f2f2", //面板的背景色。
+        "panel.border": "#cccccc", //将面板与编辑器隔开的边框颜色。
+        "panel.dropBorder": "#3399ee", //拖放面板标题的反馈颜色。
+        "panelInput.border": "#cccccc", //用于面板中输入内容的输入框边框。
+        "panelSection.border": "#cccccc", //当多个视图在面板中水平堆叠时使用的面板区域的边框颜色。
+        "panelSection.dropBackground": "#dddddd80", //拖放面板区域的反馈颜色。颜色必须透明。
+        "panelSectionHeader.background": "#f2f2f2", //面板区域标题的背景色。面板部分是嵌套在面板中的视图。
+        "panelSectionHeader.border": "#cccccc", //当多个视图在面板中垂直堆叠时使用的面板区域标题的边框颜色。
+        "panelSectionHeader.foreground": "#333333", //面板区域标题前景色。面板部分是嵌套在面板中的视图。
+        "panelTitle.activeBorder": "#3399ee", //活动面板标题的边框颜色。
+        "panelTitle.activeForeground": "#333333", //活动面板的标题颜色。
+        "panelTitle.inactiveForeground": "#333333", //非活动面板的标题颜色。
+        //Status Bar colors
+        "statusBar.background": "#f2f2f2", //工作区或文件夹打开时状态栏的背景色。
+        "statusBar.border": "#cccccc", //状态栏分隔侧边栏和编辑器的边框颜色。
+        "statusBar.debuggingBackground": "#f2f2f2", //调试程序时状态栏的背景色。
+        "statusBar.debuggingBorder": "#cccccc", //调试程序时区别于侧边栏和编辑器的状态栏的边框颜色。
+        "statusBar.debuggingForeground": "#333333", //调试程序时状态栏的前景色。
+        "statusBar.focusBorder": "#cccccc", //聚焦于键盘导航时状态栏的边框颜色。
+        "statusBar.foreground": "#333333", //工作区或文件夹打开时状态栏的前景色。
+        "statusBar.noFolderBackground": "#f2f2f2", //没有打开文件夹时状态栏的背景色。
+        "statusBar.noFolderBorder": "#cccccc", //当没有打开文件夹时，用来使状态栏与侧边栏、编辑器分隔的状态栏的边框颜色。
+        "statusBar.noFolderForeground": "#333333", //没有打开文件夹时状态栏的前景色。
+        "statusBar.offlineBackground": "#f2f2f2", //工作台脱机时的状态栏的背景色。
+        "statusBar.offlineForeground": "#333333", //工作台脱机时的状态栏前景色。
+        "statusBarItem.activeBackground": "#dddddd", //单击时的状态栏项的背景色。
+        "statusBarItem.compactHoverBackground": "#f2f2f2", //悬停在包含两个悬停的项时的状态栏项的背景色。
+        "statusBarItem.errorBackground": "#f2f2f2", //状态栏错误项的背景色。错误项比状态栏中的其他条目更醒目以显示错误条件。
+        "statusBarItem.errorForeground": "#333333", //状态错误项的前景色。错误项比状态栏中的其他条目更醒目以显示错误条件。
+        "statusBarItem.focusBorder": "#cccccc", //聚焦于键盘导航时的状态栏项目的边框颜色。
+        "statusBarItem.hoverBackground": "#dddddd", //悬停时的状态栏项的背景色。
+        "statusBarItem.prominentBackground": "#f2f2f2", //状态栏突出显示项的背景色。突出显示项比状态栏中的其他条目更醒目以表明其重要性。在命令面板中更改“切换 Tab 键是否移动焦点”可查看示例。
+        "statusBarItem.prominentForeground": "#333333", //状态栏突出的项目的前景色。突出的项目从其他状态栏条目中脱颖而出, 以表明重要性。从命令调色板中更改“切换选项卡键移动焦点”的模式以查看示例。状态栏显示在窗口的底部。
+        "statusBarItem.prominentHoverBackground": "#dddddd", //状态栏突出显示项在被悬停时的背景色。突出显示项比状态栏中的其他条目更醒目以表明其重要性。在命令面板中更改“切换 Tab 键是否移动焦点”可查看示例。
+        "statusBarItem.remoteBackground": "#f2f2f2", //状态栏上远程指示器的背景色。
+        "statusBarItem.remoteForeground": "#333333", //状态栏上远程指示器的前景色。
+        "statusBarItem.warningBackground": "#f2f2f2", //状态栏警告项的背景色。警告项比状态栏中的其他条目更醒目以显示警告条件。
+        "statusBarItem.warningForeground": "#333333", //状态错误项的前景色。错误项比状态栏中的其他条目更醒目以显示错误条件。
+        //Title Bar colors
+        "titleBar.activeBackground": "#f2f2f2", //窗口处于活动状态时的标题栏的背景色。
+        "titleBar.activeForeground": "#333333", //窗口处于活动状态时的标题栏的前景色。
+        "titleBar.border": "#cccccc", //标题栏的边框颜色。
+        "titleBar.inactiveBackground": "#f2f2f2", //窗口处于非活动状态时的标题栏的背景色。
+        "titleBar.inactiveForeground": "#333333", //窗口处于非活动状态时的标题栏的前景色。
+        //Menu Bar colors
+        "menu.background": "#f2f2f2", //菜单项的背景色。
+        "menu.border": "#cccccc", //菜单的边框颜色。
+        "menu.foreground": "#333333", //菜单项的前景色。
+        "menu.selectionBackground": "#dddddd", //菜单中所选菜单项的背景色。
+        "menu.selectionBorder": "#00000000", //菜单中所选菜单项的边框颜色。
+        "menu.selectionForeground": "#333333", //菜单中选定菜单项的前景色。
+        "menu.separatorBackground": "#cccccc", //菜单中分隔线的颜色。
+        "menubar.selectionBackground": "#dddddd", //菜单栏中选定菜单项的背景色。
+        "menubar.selectionBorder": "#00000000", //菜单栏中所选菜单项的边框颜色。
+        "menubar.selectionForeground": "#333333", //菜单栏中选定菜单项的前景色。
+        //Command Center colors
+        "commandCenter.activeBackground": "#ffffff", //命令中心的活动的背景色。
+        "commandCenter.activeBorder": "#cccccc", //命令中心的活动的边框颜色。
+        "commandCenter.activeForeground": "#333333", //命令中心的活动前景色。
+        "commandCenter.background": "#f2f2f2", //命令中心的背景色。
+        "commandCenter.border": "#cccccc", //命令中心的边框颜色。
+        "commandCenter.foreground": "#333333", //命令中心前景色。
+        "commandCenter.inactiveBorder": "#cccccc", //窗口处于非活动状态时命令中心的边框颜色。
+        "commandCenter.inactiveForeground": "#333333", //窗口处于非活动状态时命令中心的前景色。
+        //Notification colors
+        "notificationCenter.border": "#cccccc", //通知中心的边框颜色。通知从窗口右下角滑入。
+        "notificationCenterHeader.background": "#f2f2f2", //通知中心头部的背景色。通知从窗口右下角滑入。
+        "notificationCenterHeader.foreground": "#333333", //通知中心头部的前景色。通知从窗口右下角滑入。
+        "notificationLink.foreground": "#3399ee", //通知链接的前景色。通知从窗口右下角滑入。
+        "notificationToast.border": "#cccccc", //通知横幅的边框颜色。通知从窗口右下角滑入。
+        "notifications.background": "#f2f2f2", //通知的背景色。通知从窗口右下角滑入。
+        "notifications.border": "#cccccc", //通知中心中分隔通知的边框颜色。通知从窗口右下角滑入。
+        "notifications.foreground": "#333333", //通知的前景色。通知从窗口右下角滑入。
+        "notificationsErrorIcon.foreground": "#ee3333", //用于错误通知图标的颜色。通知从窗口右下角滑入。
+        "notificationsInfoIcon.foreground": "#333333", //用于信息通知图标的颜色。通知从窗口右下角滑入。
+        "notificationsWarningIcon.foreground": "#eecc33", //用于警告通知图标的颜色。通知从窗口右下角滑入。
+        //Banner colors
+        "banner.background": "#f2f2f2", //横幅的背景色。横幅显示在窗口的标题栏下。
+        "banner.foreground": "#333333", //横幅前景色。横幅显示在窗口的标题栏下。
+        "banner.iconForeground": "#333333", //横幅图标前景色。横幅显示在窗口的标题栏下。
+        //Extensions colors
+        "extensionBadge.remoteBackground": "#3399ee", //扩展视图中远程徽标的背景色。
+        "extensionBadge.remoteForeground": "#f8f8f8", //扩展视图中远程徽标的前景色。
+        "extensionButton.background": "#3399ee", //扩展操作的按钮的背景色。
+        "extensionButton.foreground": "#f8f8f8", //扩展操作的按钮前景色。
+        "extensionButton.hoverBackground": "#3366ee", //扩展操作的按钮背景悬停颜色。
+        "extensionButton.prominentBackground": "#3399ee", //扩展操作中突出按钮的背景色。
+        "extensionButton.prominentForeground": "#f8f8f8", //扩展操作中突出按钮前景色。
+        "extensionButton.prominentHoverBackground": "#3366ee", //扩展操作中突出按钮被悬停时的颜色。
+        "extensionButton.separator": "#f8f8f8", //扩展操作的按钮分隔符颜色。
+        "extensionIcon.preReleaseForeground": "#3399ee", //预发布扩展的图标前景色。
+        "extensionIcon.sponsorForeground": "#3399ee", //扩展发起人的图标前景色。
+        "extensionIcon.starForeground": "#3399ee", //扩展分级的图标前景色。
+        "extensionIcon.verifiedForeground": "#3399ee", //已验证扩展的发布服务器图标前景色。
+        //Quick picker colors
+        "pickerGroup.border": "#cccccc", //快速选取器分组边框颜色。
+        "pickerGroup.foreground": "#333333", //快速选取器分组标签的颜色。
+        "quickInput.background": "#f2f2f2", //快速选取器的背景色。
+        "quickInput.foreground": "#333333", //快速选取器的前景色。
+        "quickInputList.focusBackground": "#dddddd", //焦点项目的快速选择器的背景色。
+        "quickInputList.focusForeground": "#333333", //焦点项目的快速选择器的前景色。
+        "quickInputList.focusIconForeground": "#333333", //焦点项目的快速选取器图标的前景色。
+        "quickInputTitle.background": "#f2f2f2", //快速选取器标题的背景色。
+        //Keybinding label colors
+        "keybindingLabel.background": "#f2f2f2", //键绑定标签的背景色。
+        "keybindingLabel.border": "#cccccc", //键绑定标签边框色。
+        "keybindingLabel.bottomBorder": "#cccccc", //键绑定标签边框底部色。
+        "keybindingLabel.foreground": "#333333", //键绑定标签前景色。
+        //Keyboard shortcut table colors
+        "keybindingTable.headerBackground": "#00000000", //Background color for the keyboard shortcuts table header.
+        "keybindingTable.rowsBackground": "#00000000", //Background color for the keyboard shortcuts table alternating rows.
+        //Integrated Terminal colors
+        "terminal.ansiBlack": "#333333", //终端中的 ANSI 颜色 Black。
+        "terminal.ansiBlue": "#3333ee", //终端中的 ANSI 颜色 Blue。
+        "terminal.ansiBrightBlack": "#333333", //终端中的 ANSI 颜色 BrightBlack。
+        "terminal.ansiBrightBlue": "#3333ee", //终端中的 ANSI 颜色 BrightBlue。
+        "terminal.ansiBrightCyan": "#33ccee", //终端中的 ANSI 颜色 BrightCyan。
+        "terminal.ansiBrightGreen": "#33ee33", //终端中的 ANSI 颜色 BrightGreen。
+        "terminal.ansiBrightMagenta": "#ee33ee", //终端中的 ANSI 颜色 BrightMagenta。
+        "terminal.ansiBrightRed": "#ee3333", //终端中的 ANSI 颜色 BrightRed。
+        "terminal.ansiBrightWhite": "#808080", //终端中的 ANSI 颜色 BrightWhite。
+        "terminal.ansiBrightYellow": "#eecc33", //终端中的 ANSI 颜色 BrightYellow。
+        "terminal.ansiCyan": "#33ccee", //终端中的 ANSI 颜色 Cyan。
+        "terminal.ansiGreen": "#33ee33", //终端中的 ANSI 颜色 Green。
+        "terminal.ansiMagenta": "#ee33ee", //终端中的 ANSI 颜色 Magenta。
+        "terminal.ansiRed": "#ee3333", //终端中的 ANSI 颜色 Red。
+        "terminal.ansiWhite": "#808080", //终端中的 ANSI 颜色 White。
+        "terminal.ansiYellow": "#eecc33", //终端中的 ANSI 颜色 Yellow。
+        "terminal.border": "#cccccc", //分隔终端中拆分窗格的边框颜色。默认值为 panel.border 的颜色。
+        "terminal.dropBackground": "#dddddd80", //在终端上拖动时的背景色。颜色必须透明。
+        "terminal.findMatchBackground": "#eeee3380", //终端中当前搜索匹配项的颜色。颜色必须透明。
+        "terminal.findMatchBorder": "#00000000", //终端中当前搜索匹配项的边框颜色。
+        "terminal.findMatchHighlightBackground": "#eeee3380", //终端中其他搜索匹配项的颜色。颜色必须透明。
+        "terminal.findMatchHighlightBorder": "#00000000", //终端中其他搜索匹配项的边框颜色。
+        "terminal.foreground": "#333333", //终端的前景色。
+        "terminal.hoverHighlightBackground": "#00000000", //终端中其他搜索匹配项的边框颜色。
+        "terminal.inactiveSelectionBackground": "#99eeff80", //终端没有焦点时的选择的背景色。
+        "terminal.selectionBackground": "#99eeff80", //终端选中内容的背景色。
+        "terminal.selectionForeground": "#333333", //终端的选择前景色。如果此值为 null，则将保留所选前景并应用最小对比度功能。
+        "terminal.tab.activeBorder": "#3333ee", //面板中终端选项卡侧边的边框颜色。此默认为 tab.activeBorder。
+        "terminalCommandDecoration.defaultBackground": "#00000000", //默认终端命令修饰的背景色。
+        "terminalCommandDecoration.errorBackground": "#00000000", //错误命令的终端命令修饰的背景色。
+        "terminalCommandDecoration.successBackground": "#00000000", //成功命令的终端命令修饰的背景色。
+        "terminalCursor.background": "#333333", //终端光标的背景色。允许自定义被 block 光标遮住的字符的颜色。
+        "terminalCursor.foreground": "#333333", //终端光标的前景色。
+        "terminalOverviewRuler.cursorForeground": "#00000000", //概述标尺光标颜色。
+        "terminalOverviewRuler.findMatchForeground": "#00000000", //用于在终端中查找匹配项的概述标尺标记颜色。
+        "terminal.background": "#f2f2f2", //终端的背景色。
+        //Debug colors
+        "debugTokenExpression.boolean": "#3333ee", //Foreground color for booleans in the debug views.
+        "debugTokenExpression.error": "#ee3333", //Foreground color for expression errors in the debug views and for error logs shown in the debug console.
+        "debugTokenExpression.name": "#333333", //Foreground color for the token names shown in the debug views.
+        "debugTokenExpression.number": "#339966", //Foreground color for numbers in the debug views.
+        "debugTokenExpression.string": "#aa1515", //Foreground color for strings in the debug views.
+        "debugTokenExpression.value": "#3333ee", //Foreground color for the token values shown in the debug views.
+        "debugToolBar.background": "#f2f2f2", //调试工具栏的背景色。
+        "debugToolBar.border": "#cccccc", //调试工具栏的边框颜色。
+        "debugView.exceptionLabelBackground": "#f2f2f2", //Background color for a label shown in the CALL STACK view when the debugger breaks on an exception.
+        "debugView.exceptionLabelForeground": "#333333", //Foreground color for a label shown in the CALL STACK view when the debugger breaks on an exception.
+        "debugView.stateLabelBackground": "#f2f2f2", //Background color for a label in the CALL STACK view showing the current session's or thread's state.
+        "debugView.stateLabelForeground": "#333333", //Foreground color for a label in the CALL STACK view showing the current session's or thread's state.
+        "debugView.valueChangedHighlight": "#3399ee", //Color used to highlight value changes in the debug views.
+        "editor.focusedStackFrameHighlightBackground": "#00000000", //堆栈帧中焦点一行的高亮的背景色。
+        "editor.inlineValuesBackground": "#00000000", //调试内联值背景的颜色。
+        "editor.inlineValuesForeground": "#808080", //调试内联值文本的颜色。
+        "editor.stackFrameHighlightBackground": "#00000000", //堆栈帧中顶部一行的高亮的背景色。
+        //Testing colors
+        // "testing.iconErrored": "#000000", //测试资源管理器中出错图标的颜色。
+        // "testing.iconFailed": "#000000", //测试资源管理器中失败图标的颜色。
+        // "testing.iconPassed": "#000000", //测试资源管理器中已通过图标的颜色。
+        // "testing.iconQueued": "#000000", //测试资源管理器中已排队图标的颜色。
+        // "testing.iconSkipped": "#000000", //测试资源管理器中已跳过图标的颜色。
+        // "testing.iconUnset": "#000000", //测试资源管理器中未设置图标的颜色。
+        // "testing.message.error.decorationForeground": "#000000", //在编辑器中内联显示的测试错误消息的前景色。
+        // "testing.message.error.lineBackground": "#000000", //在编辑器中内联显示的错误消息旁边的边距颜色。
+        // "testing.message.info.decorationForeground": "#000000", //在编辑器中内联显示的测试信息消息的前景色。
+        // "testing.message.info.lineBackground": "#000000", //在编辑器中内联显示的信息消息旁边的边距颜色。
+        // "testing.peekBorder": "#000000", //速览视图边框和箭头颜色。
+        // "testing.peekHeaderBackground": "#000000", //速览视图边框和箭头颜色。
+        // "testing.runAction": "#000000", //编辑器中运行图标的颜色。
+        //Welcome page colors
+        "walkThrough.embeddedEditorBackground": "#ffffff", //嵌入于交互式演练场中的编辑器的背景色。
+        "walkthrough.stepTitle.foreground": "#333333", //每个演练步骤标题的前景色。
+        "welcomePage.background": "#ffffff", //欢迎页面的背景色。
+        "welcomePage.progress.background": "#ffffff", //欢迎页面进度栏的背景色。
+        "welcomePage.progress.foreground": "#333333", //欢迎页面进度栏的前景色。
+        "welcomePage.tileBackground": "#ffffff", //欢迎页面上磁贴的背景色。
+        "welcomePage.tileBorder": "#cccccc", //欢迎页面上磁贴的边框颜色。
+        "welcomePage.tileHoverBackground": "#dddddd", //欢迎页面上悬停时磁贴的背景色。
+        // Source Control colors
+        "scm.providerBorder": "#00000000", //SCM 提供程序分隔符的边框颜色。
+        //Git colors sdasd
+        "gitDecoration.addedResourceForeground": "#3399ee", //已添加资源的颜色。
+        "gitDecoration.conflictingResourceForeground": "#808080", //存在冲突的资源的颜色。
+        "gitDecoration.deletedResourceForeground": "#ee3333", //已删除资源的颜色。
+        "gitDecoration.ignoredResourceForeground": "#333333", //已忽略资源的颜色。
+        "gitDecoration.modifiedResourceForeground": "#99ee33", //已修改资源的颜色。
+        "gitDecoration.renamedResourceForeground": "#99ee33", //重命名或复制的资源的颜色。
+        "gitDecoration.stageDeletedResourceForeground": "#ee3333", //已暂存的已删除资源的颜色。
+        "gitDecoration.stageModifiedResourceForeground": "#99ee33", //已暂存的已修改资源的颜色。
+        "gitDecoration.submoduleResourceForeground": "#333333", //子模块资源的颜色。
+        "gitDecoration.untrackedResourceForeground": "#333333", //未跟踪资源的颜色。
+        //Settings Editor colors
+        "settings.checkboxBackground": "#ffffff", //设置编辑器复选框的背景色。
+        "settings.checkboxBorder": "#cccccc", //设置编辑器复选框的边框颜色。
+        "settings.checkboxForeground": "#333333", //设置编辑器复选框前景色。
+        "settings.dropdownBackground": "#ffffff", //设置编辑器下拉列表的背景色。
+        "settings.dropdownBorder": "#cccccc", //设置编辑器下拉列表的边框颜色。
+        "settings.dropdownForeground": "#333333", //设置编辑器下拉列表前景色。
+        "settings.dropdownListBorder": "#cccccc", //设置编辑器下拉列表的边框颜色。这会将选项包围起来，并将选项与描述分开。
+        "settings.focusedRowBackground": "#00000000", //聚焦时设置行的背景色。
+        "settings.focusedRowBorder": "#cccccc", //将焦点放在行上时行的上边框和下边框颜色。
+        "settings.headerBorder": "#cccccc", //标头容器的边框颜色。
+        "settings.headerForeground": "#333333", //节标题或活动标题的前景色。
+        "settings.modifiedItemIndicator": "#99ee33", //修改后的设置指示器的颜色。
+        "settings.numberInputBackground": "#ffffff", //设置编辑器编号输入框的背景色。
+        "settings.numberInputBorder": "#cccccc", //设置编辑器编号输入框的边框颜色。
+        "settings.numberInputForeground": "#333333", //设置编辑器编号输入框前景色。
+        "settings.rowHoverBackground": "#00000000", //悬停时设置行的背景色。
+        "settings.sashBorder": "#00000000", //设置编辑器分割檢視窗扇的边框颜色。
+        "settings.settingsHeaderHoverForeground": "#333333", //节标题或悬停标题的前景色。
+        "settings.textInputBackground": "#ffffff", //设置编辑器文本输入框的背景色。
+        "settings.textInputBorder": "#cccccc", //设置编辑器文本输入框的边框颜色。
+        "settings.textInputForeground": "#333333", //设置编辑器文本输入框前景色。
+        //Breadcrumbs colors
+        "breadcrumb.activeSelectionForeground": "#333333", //已选导航路径项的颜色。
+        "breadcrumb.background": "#f2f2f2", //导航路径项的背景色。
+        "breadcrumb.focusForeground": "#333333", //悬停时导航路径项的前景颜色。
+        "breadcrumb.foreground": "#333333", //导航路径项的前颜色。
+        "breadcrumbPicker.background": "#f2f2f2", //导航路径项选择器的背景色。
+        //Snippets colors
+        "editor.snippetFinalTabstopHighlightBackground": "#00000000", //代码片段中最后的 Tab 位的高亮的背景色。
+        "editor.snippetFinalTabstopHighlightBorder": "#808080", //代码片段中最后的制表位的高亮的边框颜色。
+        "editor.snippetTabstopHighlightBackground": "#00000000", //代码片段 Tab 位的高亮的背景色。
+        "editor.snippetTabstopHighlightBorder": "#3333ee", //代码片段 Tab 位的高亮的边框颜色。
+        //Symbol Icons colors
+        "symbolIcon.arrayForeground": "#336699", //数组符号的前景色。
+        "symbolIcon.booleanForeground": "#3333ee", //布尔符号的前景色。
+        "symbolIcon.classForeground": "#3333ee", //类符号的前景色。
+        "symbolIcon.colorForeground": "#333333", //颜色符号的前景色。
+        "symbolIcon.constantForeground": "#333333", //常量符号的前景色。
+        "symbolIcon.constructorForeground": "#996633", //构造函数符号的前景色。
+        "symbolIcon.enumeratorForeground": "#3333ee", //枚举符号的前景色。
+        "symbolIcon.enumeratorMemberForeground": "#333333", //枚举器成员符号的前景色。
+        "symbolIcon.eventForeground": "#333333", //事件符号的前景色。
+        "symbolIcon.fieldForeground": "#333333", //字段符号的前景色。
+        "symbolIcon.fileForeground": "#333333", //文件符号的前景色。
+        "symbolIcon.folderForeground": "#333333", //文件夹符号的前景色。
+        "symbolIcon.functionForeground": "#996633", //函数符号的前景色。
+        "symbolIcon.interfaceForeground": "#3333ee", //接口符号的前景色。
+        "symbolIcon.keyForeground": "#3333ee", //键符号的前景色。
+        "symbolIcon.keywordForeground": "#3333ee", //关键字符号的前景色。
+        "symbolIcon.methodForeground": "#996633", //方法符号的前景色。
+        "symbolIcon.moduleForeground": "#3333ee", //模块符号的前景色。
+        "symbolIcon.namespaceForeground": "#3333ee", //命名空间符号的前景色。
+        "symbolIcon.nullForeground": "#3333ee", //空符号的前景色。
+        "symbolIcon.numberForeground": "#339966", //数字符号的前景色。
+        "symbolIcon.objectForeground": "#336699", //对象符号的前景色。
+        "symbolIcon.operatorForeground": "#3333ee", //运算符符号的前景色。
+        "symbolIcon.packageForeground": "#3333ee", //包符号的前景色。
+        "symbolIcon.propertyForeground": "#336699", //属性符号的前景色。
+        "symbolIcon.referenceForeground": "#333333", //参考符号的前景色。
+        "symbolIcon.snippetForeground": "#333333", //片段符号的前景色。
+        "symbolIcon.stringForeground": "#aa1515", //字符串符号的前景色。
+        "symbolIcon.structForeground": "#3333ee", //结构符号的前景色。
+        "symbolIcon.textForeground": "#333333", //文本符号的前景色。
+        "symbolIcon.typeParameterForeground": "#336699", //类型参数符号的前景色。
+        "symbolIcon.unitForeground": "#339966", //单位符号的前景色。
+        "symbolIcon.variableForeground": "#336699", //变量符号的前景色。
+        //Debug Icons colors
+        // "debugConsole.errorForeground": "#000000", //Foreground color for error messages in debug REPL console.
+        // "debugConsole.infoForeground": "#000000", //Foreground color for info messages in debug REPL console.
+        // "debugConsole.sourceForeground": "#000000", //Foreground color for source filenames in debug REPL console.
+        // "debugConsole.warningForeground": "#000000", //Foreground color for warning messages in debug REPL console.
+        // "debugConsoleInputIcon.foreground": "#000000", //Foreground color for debug console input marker icon.
+        // "debugIcon.breakpointCurrentStackframeForeground": "#000000", //当前断点堆栈帧的图标前景色。
+        // "debugIcon.breakpointDisabledForeground": "#000000", //禁用断点的图标前景色。
+        // "debugIcon.breakpointForeground": "#000000", //断点图标前景色。
+        // "debugIcon.breakpointStackframeForeground": "#000000", //所有断点堆栈帧的图标前景色。
+        // "debugIcon.breakpointUnverifiedForeground": "#000000", //未验证断点的图标前景色。
+        // "debugIcon.continueForeground": "#000000", //继续的调试工具栏图标前景色。
+        // "debugIcon.disconnectForeground": "#000000", //断开连接的调试工具栏图标前景色。
+        // "debugIcon.pauseForeground": "#000000", //暂停的调试工具栏图标前景色。
+        // "debugIcon.restartForeground": "#000000", //重启的调试工具栏图标前景色。
+        // "debugIcon.startForeground": "#000000", //开始调试的调试工具栏图标前景色。
+        // "debugIcon.stepBackForeground": "#000000", //后退的调试工具栏图标前景色。
+        // "debugIcon.stepIntoForeground": "#000000", //单步执行的调试工具栏图标前景色。
+        // "debugIcon.stepOutForeground": "#000000", //单步执行的调试工具栏图标前景色。
+        // "debugIcon.stepOverForeground": "#000000", //跳过的调试工具栏图标前景色。
+        // "debugIcon.stopForeground": "#000000", //停止的调试工具栏图标前景色。
+        //Notebook colors
+        // "notebook.cellBorderColor": "#000000", //笔记本单元格的边框颜色。
+        // "notebook.cellEditorBackground": "#000000", //单元格编辑器的背景色。
+        // "notebook.cellHoverBackground": "#000000", //悬停在单元格上时单元格的背景色。
+        // "notebook.cellInsertionIndicator": "#000000", //笔记本单元格插入指示符的颜色。
+        // "notebook.cellStatusBarItemHoverBackground": "#000000", //笔记本单元格状态栏项的背景色。
+        // "notebook.cellToolbarSeparator": "#000000", //单元格底部工具栏中分隔符的颜色。
+        // "notebook.editorBackground": "#000000", //笔记本的背景色。
+        // "notebook.focusedCellBackground": "#000000", //将焦点放在单元格上时单元格的背景色。
+        // "notebook.focusedCellBorder": "#000000", //将焦点放在单元格上时单元格焦点指示器的边框颜色。
+        // "notebook.focusedEditorBorder": "#000000", //笔记本单元格编辑器的边框颜色。
+        // "notebook.inactiveFocusedCellBorder": "#000000", //当主要焦点在编辑器外时，聚焦单元格时单元格的上下的边框颜色。
+        // "notebook.inactiveSelectedCellBorder": "#000000", //选定多个单元格时单元格的边框颜色。
+        // "notebook.outputContainerBackgroundColor": "#000000", //笔记本输出容器的背景色。
+        // "notebook.outputContainerBorderColor": "#000000", //笔记本输出容器的边框颜色。
+        // "notebook.selectedCellBackground": "#000000", //选中某个单元格时该单元格的背景色。
+        // "notebook.selectedCellBorder": "#000000", //选中单元格但未将焦点放在其上时单元格的上下的边框颜色。
+        // "notebook.symbolHighlightBackground": "#000000", //突出显示的单元格的背景色。
+        // "notebookEditorOverviewRuler.runningCellForeground": "#000000", //笔记本编辑器概述标尺中正在运行的单元格修饰的前景色。
+        // "notebookScrollbarSlider.activeBackground": "#000000", //单击时笔记本滚动条滑块的背景色。
+        // "notebookScrollbarSlider.background": "#000000", //笔记本滚动条滑块的背景色。
+        // "notebookScrollbarSlider.hoverBackground": "#000000", //悬停时笔记本滚动条滑块的背景色。
+        // "notebookStatusErrorIcon.foreground": "#000000", //单元格状态栏中笔记本单元格的错误图标前景色。
+        // "notebookStatusRunningIcon.foreground": "#000000", //单元格状态栏中笔记本单元格的正在运行图标前景色。
+        // "notebookStatusSuccessIcon.foreground": "#000000", //单元格状态栏中笔记本单元格的错误图标前景色。
+        //Chart colors
+        // "charts.blue": "#000000", //图表可视化效果中使用的蓝色。
+        // "charts.foreground": "#000000", //图表中使用的前景色。
+        // "charts.green": "#000000", //图表可视化效果中使用的绿色。
+        // "charts.lines": "#000000", //用于图表中的水平线条的颜色。
+        // "charts.orange": "#000000", //图表可视化效果中使用的橙色。
+        // "charts.purple": "#000000", //图表可视化效果中使用的紫色。
+        // "charts.red": "#000000", //图表可视化效果中使用的红色。
+        // "charts.yellow": "#000000", //图表可视化效果中使用的黄色。
+        //Ports Colors
+        // "ports.iconRunningProcessForeground": "#000000", //具有关联的正在运行的进程的端口图标前景色。
+        //Comments View colors
+        // "commentsView.resolvedIcon": "#000000", //解析批注的图标前景色。
+        // "commentsView.unresolvedIcon": "#000000", //未解析批注的图标前景色。
+    },
+    "tokenColors": [
+        {
+            "scope": [
+                "entity.name.function",
+                "entity.name.operator.custom-literal",
+                "support.function"
+            ],
+            "settings": {
+                "foreground": "#996633"
+            }
+        },
+        {
+            "scope": [
+                "entity.name.class",
+                "entity.name.namespace",
+                "entity.name.scope-resolution",
+                "entity.name.type",
+                "entity.other.attribute",
+                "entity.other.attribute-name",
+                "entity.other.inherited-class",
+                "source.coffee.embedded",
+                "storage.type.annotation.groovy",
+                "storage.type.annotation.java",
+                "storage.type.boolean.go",
+                "storage.type.byte.go",
+                "storage.type.cs",
+                "storage.type.error.go",
+                "storage.type.generic.cs",
+                "storage.type.generic.groovy",
+                "storage.type.generic.java",
+                "storage.type.groovy",
+                "storage.type.java",
+                "storage.type.modifier.cs",
+                "storage.type.numeric.go",
+                "storage.type.object.array.groovy",
+                "storage.type.object.array.java",
+                "storage.type.parameters.groovy",
+                "storage.type.primitive.array.groovy",
+                "storage.type.primitive.array.java",
+                "storage.type.primitive.groovy",
+                "storage.type.primitive.java",
+                "storage.type.rune.go",
+                "storage.type.string.go",
+                "storage.type.token.java",
+                "storage.type.uintptr.go",
+                "storage.type.variable.cs",
+                "support.class",
+                "support.type",
+                "support.type.property-name",
+                "support.type.vendored.property-name",
+                "variable.css",
+                "variable.other.less",
+                "variable.scss"
+            ],
+            "settings": {
+                "foreground": "#336699"
+            }
+        },
+        {
+            "scope": [
+                "constant.character",
+                "constant.language",
+                "constant.other.option",
+                "constant.other.placeholder",
+                "entity.name.function.preprocessor",
+                "entity.name.operator",
+                "entity.name.selector",
+                "entity.name.tag",
+                "entity.other.attribute-name.class.css",
+                "entity.other.attribute-name.class.mixin.css",
+                "entity.other.attribute-name.id.css",
+                "entity.other.attribute-name.id.less",
+                "entity.other.attribute-name.parent-selector.css",
+                "entity.other.attribute-name.pseudo-class.css",
+                "entity.other.attribute-name.pseudo-element.css",
+                "entity.other.attribute-name.scss",
+                "keyword",
+                "keyword.control",
+                "keyword.operator.alignas",
+                "keyword.operator.alignof",
+                "keyword.operator.cast",
+                "keyword.operator.delete",
+                "keyword.operator.expression",
+                "keyword.operator.instanceof",
+                "keyword.operator.logical.python",
+                "keyword.operator.new",
+                "keyword.operator.noexcept",
+                "keyword.operator.sizeof",
+                "keyword.operator.typeid",
+                "keyword.operator.wordlike",
+                "keyword.other.operator",
+                "keyword.other.using",
+                "meta.preprocessor",
+                "meta.structure.dictionary.key.python",
+                "punctuation.definition.template-expression.begin",
+                "punctuation.definition.template-expression.end",
+                "punctuation.section.embedded",
+                "punctuation.section.embedded.begin.php",
+                "punctuation.section.embedded.end.php",
+                "storage",
+                "storage.modifier",
+                "storage.type",
+                "string.comment.buffered.block.pug",
+                "string.interpolated.pug",
+                "variable.language",
+                "variable.language.wildcard.java",
+                "variable.parameter.function.language.special.self.python"
+            ],
+            "settings": {
+                "foreground": "#3333ee"
+            }
+        },
+        {
+            "scope": [
+                "entity.name.label",
+                "entity.name.variable",
+                "keyword.operator",
+                "keyword.operator.quantifier.regexp",
+                "meta.definition.variable.name",
+                "meta.embedded",
+                "meta.template.expression",
+                "punctuation.definition.character-class.regexp",
+                "punctuation.definition.group.regexp",
+                "punctuation.definition.tag",
+                "source.groovy.embedded",
+                "storage.modifier.import.java",
+                "storage.modifier.package.java",
+                "string meta.image.inline.markdown",
+                "support.constant.color",
+                "support.constant.font-name",
+                "support.constant.media",
+                "support.constant.media-type",
+                "support.variable",
+                "variable",
+                "variable.other.constant"
+            ],
+            "settings": {
+                "foreground": "#333333"
+            }
+        },
+        {
+            "scope": [
+                "constant.other.color.rgb-value",
+                "constant.other.rgb-value",
+                "markup.deleted",
+                "markup.inline.raw",
+                "meta.embedded.assembly",
+                "meta.preprocessor.string",
+                "string",
+                "string.quoted",
+                "string.quoted.double",
+                "string.quoted.single",
+                "string.regexp",
+                "string.unquoted",
+                "support.constant.property-value"
+            ],
+            "settings": {
+                "foreground": "#aa1515"
+            }
+        },
+        {
+            "scope": [
+                "constant.numeric",
+                "keyword.operator.minus.exponent",
+                "keyword.operator.plus.exponent",
+                "keyword.other.unit",
+                "markup.inserted",
+                "meta.preprocessor.numeric",
+                "variable.other.enummember"
+            ],
+            "settings": {
+                "foreground": "#339966"
+            }
+        },
+        {
+            "scope": [
+                "comment",
+                "comment.block",
+                "comment.block.documentation",
+                "comment.line",
+                "punctuation.definition.comment",
+                "string.quoted.docstring"
+            ],
+            "settings": {
+                "foreground": "#808080"
+            }
+        },
+        {
+            "scope": "invalid",
+            "settings": {
+                "foreground": "#ee3333"
+            }
+        },
+        {
+            "scope": [
+                "strong",
+                "markup.heading",
+                "markup.bold"
+            ],
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": [
+                "emphasis",
+                "markup.italic"
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "markup.strikethrough",
+            "settings": {
+                "fontStyle": "strikethrough"
+            }
+        },
+        {
+            "scope": "markup.underline",
+            "settings": {
+                "fontStyle": "underline"
+            }
+        }
+    ]
+}
