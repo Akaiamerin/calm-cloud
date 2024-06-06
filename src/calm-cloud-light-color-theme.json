@@ -239,9 +239,9 @@
         "editorError.foreground": "#ee3333", //编辑器中错误波浪线的前景色。
         "editorGutter.addedBackground": "#0080ee", //编辑器导航线中已插入行的背景色。
         "editorGutter.background": "#ffffff", //编辑器导航线的背景色。导航线包括边缘符号和行号。
-        "editorGutter.commentGlyphForeground": "#000000", //编辑器装订线中评论字形的装饰颜色。
-        "editorGutter.commentRangeForeground": "#000000", //用于标注范围的编辑器装订线装饰颜色。颜色必须不透明。
-        "editorGutter.commentUnresolvedGlyphForeground": "#000000", //编辑器装订线修饰颜色，用于注释未解析注释线程的字形。
+        "editorGutter.commentGlyphForeground": "#f2f2f2", //编辑器装订线中评论字形的装饰颜色。
+        "editorGutter.commentRangeForeground": "#f2f2f2", //用于标注范围的编辑器装订线装饰颜色。颜色必须不透明。
+        "editorGutter.commentUnresolvedGlyphForeground": "#f2f2f2", //编辑器装订线修饰颜色，用于注释未解析注释线程的字形。
         "editorGutter.deletedBackground": "#ee3333", //编辑器导航线中被删除行的背景色。
         "editorGutter.foldingControlForeground": "#808080", //编辑器装订线中折叠控件的颜色。
         "editorGutter.modifiedBackground": "#80ee00", //编辑器导航线中已修改行的背景色。
