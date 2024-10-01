@@ -6,7 +6,7 @@
         "contrastActiveBorder": "#00000000", //在活动元素周围额外的一层边框，用来提高对比度从而区别其他元素。
         "contrastBorder": "#00000000", //在元素周围额外的一层边框，用来提高对比度从而区别其他元素。
         "descriptionForeground": "#333333", //提供其他信息的说明文本的前景色（例如标签文本）。
-        "disabledForeground": "#333333", //已禁用元素的前景色。此颜色仅在不被组件覆盖时适用。
+        "disabledForeground": "#808080", //已禁用元素的前景色。此颜色仅在不被组件覆盖时适用。
         "errorForeground": "#ee3333", //错误信息的前景色。此颜色仅在不被组件覆盖时适用。
         "focusBorder": "#cccccc", //焦点元素的边框颜色。此颜色仅在不被组件覆盖时适用。
         "foreground": "#333333", //整体前景色。此颜色仅在不被组件覆盖时适用。
@@ -56,7 +56,7 @@
         "inputValidation.errorBorder": "#cccccc", //严重性为错误时输入验证的边框颜色。
         "inputValidation.errorForeground": "#ee3333", //输入验证结果为错误级别时的前景色。
         "inputValidation.infoBackground": "#ffffff", //输入验证结果为信息级别时的背景色。
-        "inputValidation.infoBorder": "#333333", //严重性为信息时输入验证的边框颜色。
+        "inputValidation.infoBorder": "#cccccc", //严重性为信息时输入验证的边框颜色。
         "inputValidation.infoForeground": "#333333", //输入验证结果为信息级别时的前景色。
         "inputValidation.warningBackground": "#ffffff", //严重性为警告时输入验证的背景色。
         "inputValidation.warningBorder": "#cccccc", //严重性为警告时输入验证的边框颜色。
@@ -634,7 +634,7 @@
         "breadcrumbPicker.background": "#f2f2f2", //导航路径项选择器的背景色。
         //Snippets colors
         "editor.snippetFinalTabstopHighlightBackground": "#00000000", //代码片段中最后的 Tab 位的高亮的背景色。
-        "editor.snippetFinalTabstopHighlightBorder": "#808080", //代码片段中最后的制表位的高亮的边框颜色。
+        "editor.snippetFinalTabstopHighlightBorder": "#00000000", //代码片段中最后的制表位的高亮的边框颜色。
         "editor.snippetTabstopHighlightBackground": "#00000000", //代码片段 Tab 位的高亮的背景色。
         "editor.snippetTabstopHighlightBorder": "#3333ee", //代码片段 Tab 位的高亮的边框颜色。
         //Symbol Icons colors

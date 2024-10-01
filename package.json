@@ -2,7 +2,7 @@
   "name": "calm-cloud",
   "displayName": "Calm Cloud",
   "description": "A VS Code theme with the name Calm Cloud",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "Akaiamerin",
   "engines": {
     "vscode": "^1.50.0"

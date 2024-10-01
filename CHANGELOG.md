@@ -14,3 +14,14 @@
 + "editorGutter.commentRangeForeground": "#f2f2f2",
 + "editorGutter.commentUnresolvedGlyphForeground": "#f2f2f2",
 ```
+
+## 1.0.2（2024-10-01）
+### Bug Fixes
+```JSON
+- "disabledForeground": "#333333",
+- "inputValidation.infoBorder": "#333333",
+- "editor.snippetFinalTabstopHighlightBorder": "#808080",
++ "disabledForeground": "#808080",
++ "inputValidation.infoBorder": "#cccccc",
++ "editor.snippetFinalTabstopHighlightBorder": "#00000000",
+```
