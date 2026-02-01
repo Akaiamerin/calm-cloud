@@ -244,6 +244,7 @@
         "editorGutter.commentUnresolvedGlyphForeground": "#f2f2f2", //编辑器装订线修饰颜色，用于注释未解析注释线程的字形。
         "editorGutter.deletedBackground": "#ee3333", //编辑器导航线中被删除行的背景色。
         "editorGutter.foldingControlForeground": "#808080", //编辑器装订线中折叠控件的颜色。
+        "editorGutter.itemBackground":"#f2f2f2", //用于装订线项目背景的编辑器装订线装饰颜色。此颜色应不透明。
         "editorGutter.modifiedBackground": "#80ee00", //编辑器导航线中已修改行的背景色。
         "editorHint.border": "#00000000", //如果设置，编辑器中提示的双下划线颜色。
         "editorHint.foreground": "#808080", //编辑器中提示波浪线的前景色。
@@ -272,7 +273,7 @@
         "editorOverviewRuler.errorForeground": "#ee3333", //概览标尺中错误标记的颜色。
         "editorOverviewRuler.findMatchForeground": "#eeee33", //用于查找匹配项的概述标尺标记颜色。颜色必须透明。
         "editorOverviewRuler.infoForeground": "#333333", //概览标尺中信息标记的颜色。
-        "editorOverviewRuler.modifiedForeground": "#3399ee", //概览标尺中已修改内容的颜色。
+        "editorOverviewRuler.modifiedForeground": "#99ee33", //概览标尺中已修改内容的颜色。
         "editorOverviewRuler.rangeHighlightForeground": "#00000000", //用于突出显示范围的概述标尺标记颜色。颜色必须透明。
         "editorOverviewRuler.selectionHighlightForeground": "#3399ee", //用于突出显示所选内容的概述标尺标记颜色。颜色必须透明。
         "editorOverviewRuler.warningForeground": "#ee9933", //概览标尺中警告标记的颜色。
@@ -591,9 +592,9 @@
         "welcomePage.tileBackground": "#ffffff", //欢迎页面上磁贴的背景色。
         "welcomePage.tileBorder": "#cccccc", //欢迎页面上磁贴的边框颜色。
         "welcomePage.tileHoverBackground": "#dddddd", //欢迎页面上悬停时磁贴的背景色。
-        // Source Control colors
+        //Source Control colors
         "scm.providerBorder": "#00000000", //SCM 提供程序分隔符的边框颜色。
-        //Git colors sdasd
+        //Git colors
         "gitDecoration.addedResourceForeground": "#3399ee", //已添加资源的颜色。
         "gitDecoration.conflictingResourceForeground": "#808080", //存在冲突的资源的颜色。
         "gitDecoration.deletedResourceForeground": "#ee3333", //已删除资源的颜色。
