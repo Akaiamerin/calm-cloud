@@ -2,10 +2,10 @@
   "name": "calm-cloud",
   "displayName": "Calm Cloud",
   "description": "A VS Code theme with the name Calm Cloud",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "publisher": "Akaiamerin",
   "engines": {
-    "vscode": "^1.50.0"
+    "vscode": "^1.100.0"
   },
   "icon": "img/logo.png",
   "categories": [
@@ -17,6 +17,11 @@
         "label": "Calm Cloud Light",
         "uiTheme": "vs",
         "path": "./themes/calm-cloud-light-color-theme.json"
+      },
+      {
+        "label": "Calm Cloud Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/calm-cloud-dark-color-theme.json"
       }
     ]
   },

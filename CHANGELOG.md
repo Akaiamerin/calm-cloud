@@ -1,5 +1,11 @@
 <h1 align="center">Calm Cloud Change Log</h1>
 
+## 2.0.0（2026-06-06）
+### Refactoring
+- 亮色主题
+
+- 暗色主题
+
 ## 1.0.0（2024-05-04）
 ### New Features
 - 亮色主题

@@ -4,10 +4,6 @@ function parse(json) {
     return json
         .split(EOL)
         .map((str) => {
-            const index = str.indexOf('//');
-            if (index !== -1) {
-                str = str.substring(0, index);
-            }
             return str.replace(/\s*/g, '');
         })
         .join('')
@@ -22,6 +18,8 @@ function main() {
     const src = './src/';
     const dist = './themes/';
     const light = 'calm-cloud-light-color-theme.json';
+    const dark = 'calm-cloud-dark-color-theme.json';
     convert(`${src}${light}`, `${dist}${light}`);
+    convert(`${src}${dark}`, `${dist}${dark}`);
 }
 main();
